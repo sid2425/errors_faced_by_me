@@ -8,3 +8,4 @@ if(Isset($_GET['msg'])
 echo "some msg";
 }
 ?>
+
