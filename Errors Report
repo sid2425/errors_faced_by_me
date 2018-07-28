@@ -1,0 +1,10 @@
+To pass message for a particular if() statement in php 
+Eg: header('Location:input.php?msg');
+
+File -> input.php
+<?php 
+if(Isset($_GET['msg'])
+{ 
+echo "some msg";
+}
+?>
