@@ -8,4 +8,12 @@ if(Isset($_GET['msg'])
 echo "some msg";
 }
 ?>
-
+Scrolling to particular div tag using Jquery:
+Eg: <a href="#contactus" class="scrollTo">Contact Us</a>
+<script >$(".scrollTo").on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: ($(target).offset().top)
+    }, 2000);
+ });</script>
