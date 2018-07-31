@@ -19,7 +19,7 @@ Eg: <a href="#contactus" class="scrollTo">Contact Us</a>
  });</script>
 
 Warning: Cannot modify header information - headers already sent (output started at script:line) 
-Use session_start(); at the beginning of your code 
+Use "session_start();" at the beginning of your code 
 
 Refreshing a page for 'X' seconds 2 ways:
  <meta http-equiv="refresh" content="600">
