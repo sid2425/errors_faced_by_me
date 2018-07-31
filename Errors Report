@@ -25,3 +25,30 @@ Refreshing a page for 'X' seconds 2 ways:
  <meta http-equiv="refresh" content="600">
  <?php header("Refresh:30" ,url=***.php")?>
  
+Sending an email using localhost (XAMPP):
+[Modify] the php.ini file to use it (commented out the other lines):
+
+[mail function]
+; For Win32 only.
+; SMTP = smtp.gmail.com
+; smtp_port = 25
+
+; For Win32 only.
+; sendmail_from = <e-mail username>@gmail.com
+
+; For Unix only. You may supply arguments as well (default: "sendmail -t -i").
+sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
+php.ini:
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+;sendmail_path="C:\xampp\mailtodisk\mailtodisk.exe"
+
+[sendmail.ini]
+
+smtp_server=smtp.gmail.com
+smtp_port=465
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=your@gmail.com
+auth_password=yourpassword
+force_sender=your@gmail.com
+hostname=localhost
