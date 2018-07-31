@@ -17,3 +17,11 @@ Eg: <a href="#contactus" class="scrollTo">Contact Us</a>
       scrollTop: ($(target).offset().top)
     }, 2000);
  });</script>
+
+Warning: Cannot modify header information - headers already sent (output started at script:line) 
+Use session_start(); at the beginning of your code 
+
+Refreshing a page for 'X' seconds 2 ways:
+ <meta http-equiv="refresh" content="600">
+ <?php header("Refresh:30" ,url=***.php")?>
+ 
