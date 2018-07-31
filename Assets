@@ -66,3 +66,6 @@ $sql = "SELECT  latitude,longitude,userid,status FROM tbl_currentloc WHERE statu
               $jsonData[$i] = $obj;
               $i=$i+1;
           }
+          
+ Hide your Server Side Web Stack from extensions like Wappalyzer:
+ app.disable('x-powered-by')
