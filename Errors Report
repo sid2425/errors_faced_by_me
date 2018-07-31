@@ -52,3 +52,17 @@ auth_username=your@gmail.com
 auth_password=yourpassword
 force_sender=your@gmail.com
 hostname=localhost
+
+
+Converting the data that you received from db using php into json directly into json object's:
+Ex:
+$sql = "SELECT  latitude,longitude,userid,status FROM tbl_currentloc WHERE status='active' ORDER BY `tbl_currentloc`.`slno`   limit 10";
+        $result = mysqli_query($con, $sql);  
+        $jsonData = array();
+          $i=0;
+          while ($array = mysqli_fetch_assoc($result)) {
+              $str=json_encode($array);
+              $obj=json_decode($str); 
+              $jsonData[$i] = $obj;
+              $i=$i+1;
+          }
