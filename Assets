@@ -69,3 +69,6 @@ $sql = "SELECT  latitude,longitude,userid,status FROM tbl_currentloc WHERE statu
           
  Hide your Server Side Web Stack from extensions like Wappalyzer:
  app.disable('x-powered-by')
+
+Before Creating an Event in MYSQl make sure you set event scheduler on by using following syntax:
+SET GLOBAL event_scheduler = ON;
