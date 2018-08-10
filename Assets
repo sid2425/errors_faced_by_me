@@ -89,3 +89,5 @@ document.onmousedown=killCopy
 document.onclick=reEnable
 }
 </script>
+
+oncontextmenu="return false" ->disable right click 
