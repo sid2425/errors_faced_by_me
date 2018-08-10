@@ -72,3 +72,20 @@ $sql = "SELECT  latitude,longitude,userid,status FROM tbl_currentloc WHERE statu
 
 Before Creating an Event in MYSQl make sure you set event scheduler on by using following syntax:
 SET GLOBAL event_scheduler = ON;
+
+To block copy paste:
+Just add the following code to the HEAD tag of your web page:
+<script type="text/JavaScript">
+//courtesy of BoogieJack.com
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
